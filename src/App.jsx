@@ -1,4 +1,5 @@
 import "./App.css";
+import "./index.css";
 import { useState } from "react";
 import { puppyList } from "./data";
 
@@ -15,7 +16,7 @@ function App() {
     <div className="App">
       {" "}
       {featPupId && (
-        <div>
+        <div className="logo">
           <h2>{featuredPup.name}</h2>
           <ul>
             <li>Age: {featuredPup.age}</li>
@@ -26,6 +27,7 @@ function App() {
       {puppies.map((puppy) => {
         return (
           <p
+            className="card"
             onClick={() => {
               setFeatPupId(puppy.id);
             }}
