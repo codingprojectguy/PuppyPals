@@ -40,3 +40,15 @@
 .read-the-docs {
   color: #888;
 }
+
+p {
+  border: 2px solid rgb(6, 6, 6);
+  border-radius: 5px;
+}
+
+.user {
+  padding-left: 50px;
+  padding-right: 50px;
+  border: 2px solid rgb(132, 1, 1);
+  border-radius: 5px;
+}
